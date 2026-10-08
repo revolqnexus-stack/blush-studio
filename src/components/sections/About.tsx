@@ -3,7 +3,7 @@ import { SITE_CONFIG, TRUST_STATS } from '@/constants'
 
 export function About() {
   return (
-    <section id="about" data-nav-surface="light" className="section-gap bg-bg">
+    <section id="about" data-nav-surface="light" className="section-gap bg-bg-alt">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <FadeIn direction="left">
@@ -15,7 +15,7 @@ export function About() {
                 loading="lazy"
               />
               <div className="absolute -bottom-6 -right-4 bg-dark text-white p-5 rounded-[14px] shadow-xl text-center">
-                <span className="block font-serif text-3xl font-normal text-gold leading-none">
+                <span className="block font-serif text-3xl font-normal text-brand leading-none">
                   {TRUST_STATS[0].value}
                 </span>
                 <p className="text-[0.6rem] tracking-[0.12em] uppercase text-white/50 mt-1">
@@ -27,7 +27,7 @@ export function About() {
 
           <div className="pb-6">
             <FadeUp>
-              <p className="mb-3 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-gold">
+              <p className="mb-3 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-brand">
                 Our Philosophy
               </p>
             </FadeUp>

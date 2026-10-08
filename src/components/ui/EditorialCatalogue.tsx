@@ -119,7 +119,7 @@ export function ServicePricingTable({
       <button
         type="button"
         onClick={onEnquire}
-        className="font-serif text-sm italic text-text-muted/70 transition-colors hover:text-gold md:text-base"
+        className="font-serif text-sm italic text-text-muted/70 transition-colors hover:text-brand md:text-base"
       >
         Enquire
       </button>
@@ -253,7 +253,7 @@ export function ServicePricingCard({
         className="pointer-events-none absolute inset-x-0 -top-1 select-none overflow-hidden text-center md:-top-4"
         aria-hidden="true"
       >
-        <span className="block px-4 font-serif text-[clamp(2rem,9vw,5.5rem)] font-normal leading-none text-gold/[0.09] sm:px-6">
+        <span className="block px-4 font-serif text-[clamp(2rem,9vw,5.5rem)] font-normal leading-none text-brand/[0.09] sm:px-6">
           {heading}
         </span>
       </div>
@@ -298,7 +298,7 @@ export function EditorialServiceList({
         transition={{ duration: 0.25, ease: EDITORIAL_EASE }}
       >
         <motion.span
-          className="shrink-0 pt-1 font-sans text-[0.6875rem] font-medium tabular-nums tracking-[0.08em] text-gold/70 transition-colors group-hover:text-gold"
+          className="shrink-0 pt-1 font-sans text-[0.6875rem] font-medium tabular-nums tracking-[0.08em] text-brand/70 transition-colors group-hover:text-brand"
           initial={false}
           whileHover={reducedMotion ? undefined : { scale: 1.05 }}
         >
@@ -316,14 +316,14 @@ export function EditorialServiceList({
 
         <span className="relative hidden min-w-[3rem] shrink-0 items-center pt-2 md:flex">
           <motion.span
-            className="h-px flex-1 origin-right bg-gold/40"
+            className="h-px flex-1 origin-right bg-brand/40"
             initial={{ scaleX: 0 }}
             whileHover={reducedMotion ? undefined : { scaleX: 1 }}
             transition={{ duration: 0.35, ease: EDITORIAL_EASE }}
             aria-hidden="true"
           />
           <motion.span
-            className="ml-1 font-sans text-sm text-gold/0 group-hover:text-gold"
+            className="ml-1 font-sans text-sm text-brand/0 group-hover:text-brand"
             initial={false}
             whileHover={reducedMotion ? undefined : { x: 2, opacity: 1 }}
             transition={{ duration: 0.25, ease: EDITORIAL_EASE }}
@@ -334,7 +334,7 @@ export function EditorialServiceList({
         </span>
 
         <span
-          className="shrink-0 pt-1 font-sans text-sm text-gold/50 transition-colors duration-300 group-hover:text-gold md:hidden"
+          className="shrink-0 pt-1 font-sans text-sm text-brand/50 transition-colors duration-300 group-hover:text-brand md:hidden"
           aria-hidden="true"
         >
           ↗
@@ -400,7 +400,7 @@ export function EditorialCategoryHeader({
       animate="visible"
     >
       <motion.div className="mb-3 flex flex-wrap items-center gap-3" variants={fadeUp}>
-        <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-gold">
+        <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-brand">
           {String(index).padStart(2, '0')} — {label}
         </p>
         {serviceCount !== undefined && (
@@ -417,7 +417,7 @@ export function EditorialCategoryHeader({
       </motion.h3>
       <motion.div
         className="my-4 h-px max-w-[280px] origin-left"
-        style={{ background: 'linear-gradient(to right, #CA8A04, rgba(202,138,4,0.15))' }}
+        style={{ background: 'linear-gradient(to right, #5E9F98, rgba(94,159,152,0.15))' }}
         variants={{
           hidden: { scaleX: 0 },
           visible: { scaleX: 1, transition: { duration: 0.75, ease: EDITORIAL_EASE } },
@@ -470,7 +470,7 @@ export function EditorialImagePanel({ src, alt, index, heading, caption }: Edito
         }}
       />
       <div
-        className="pointer-events-none absolute inset-y-6 right-0 w-px bg-gold/25"
+        className="pointer-events-none absolute inset-y-6 right-0 w-px bg-brand/25"
         aria-hidden="true"
       />
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden p-6 md:p-8">
@@ -484,7 +484,7 @@ export function EditorialImagePanel({ src, alt, index, heading, caption }: Edito
           >
             {caption && (
               <p
-                className="mb-2 font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-gold/90"
+                className="mb-2 font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-brand/90"
                 style={{ textShadow: '0 1px 8px rgba(0,0,0,0.35)' }}
               >
                 {caption}
@@ -563,7 +563,7 @@ export function EditorialMobileImage({
         <div className="absolute inset-0 flex flex-col justify-end p-5 sm:p-6">
           {label && (
             <p
-              className="mb-2 font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-gold/90"
+              className="mb-2 font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-brand/90"
               style={{ textShadow }}
             >
               {label}
@@ -608,7 +608,7 @@ export function EditorialMasthead({ eyebrow, title, subtitle, scriptLine }: Edit
       viewport={{ once: true, margin: '-80px' }}
     >
       <motion.p
-        className="mb-3 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-gold"
+        className="mb-3 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-brand"
         variants={fadeUp}
       >
         {eyebrow}
@@ -628,7 +628,7 @@ export function EditorialMasthead({ eyebrow, title, subtitle, scriptLine }: Edit
       />
       {scriptLine && (
         <motion.p
-          className="mb-4 font-serif text-xl italic text-gold/90 md:text-2xl"
+          className="mb-4 font-serif text-xl italic text-brand/90 md:text-2xl"
           style={{ fontFamily: "'Pinyon Script', cursive" }}
           variants={fadeUp}
         >
@@ -737,13 +737,13 @@ export function CategoryTabs({
                   {isActive && (
                     <motion.span
                       layoutId={layoutId}
-                      className="absolute bottom-0 left-4 right-4 h-px bg-gold md:left-5 md:right-5"
+                      className="absolute bottom-0 left-4 right-4 h-px bg-brand-deep md:left-5 md:right-5"
                       transition={reducedMotion ? { duration: 0.2 } : TAB_SPRING}
                     />
                   )}
                 </motion.button>
                 {index < categories.length - 1 && (
-                  <span className="hidden select-none text-gold/30 md:inline" aria-hidden="true">
+                  <span className="hidden select-none text-brand/30 md:inline" aria-hidden="true">
                     ·
                   </span>
                 )}

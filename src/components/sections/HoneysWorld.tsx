@@ -18,7 +18,7 @@ export function HoneysWorld() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.p
-            className="font-sans text-gold uppercase tracking-[0.2em] text-xs mb-4"
+            className="font-sans text-brand uppercase tracking-[0.2em] text-xs mb-4"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -71,7 +71,7 @@ export function HoneysWorld() {
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                <p className="font-sans text-gold/80 text-xs uppercase tracking-[0.18em] mb-2">For Brides</p>
+                <p className="font-sans text-brand/80 text-xs uppercase tracking-[0.18em] mb-2">For Brides</p>
                 <h3 className="font-serif text-white text-2xl md:text-3xl">Bridal</h3>
               </div>
             </div>
@@ -84,12 +84,12 @@ export function HoneysWorld() {
                 e.preventDefault()
                 scrollTo('#bridal-studio')
               }}
-              className="inline-flex items-center gap-2 font-sans font-medium text-dark text-xs uppercase tracking-[0.15em] group-hover:text-gold transition-colors"
+              className="inline-flex items-center gap-2 font-sans font-medium text-dark text-xs uppercase tracking-[0.15em] group-hover:text-brand transition-colors"
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
             >
               Discover the Blush experience
-              <span className="text-gold">→</span>
+              <span className="text-brand">→</span>
             </motion.a>
           </motion.div>
 
@@ -120,7 +120,7 @@ export function HoneysWorld() {
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                <p className="font-sans text-gold/80 text-xs uppercase tracking-[0.18em] mb-2">Celebrations</p>
+                <p className="font-sans text-brand/80 text-xs uppercase tracking-[0.18em] mb-2">Celebrations</p>
                 <h3 className="font-serif text-white text-2xl md:text-3xl">Engagement & Reception</h3>
               </div>
             </div>
@@ -133,12 +133,12 @@ export function HoneysWorld() {
                 e.preventDefault()
                 scrollTo('#services')
               }}
-              className="inline-flex items-center gap-2 font-sans font-medium text-dark text-xs uppercase tracking-[0.15em] group-hover:text-gold transition-colors"
+              className="inline-flex items-center gap-2 font-sans font-medium text-dark text-xs uppercase tracking-[0.15em] group-hover:text-brand transition-colors"
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
             >
               View services
-              <span className="text-gold">→</span>
+              <span className="text-brand">→</span>
             </motion.a>
           </motion.div>
 
@@ -169,7 +169,7 @@ export function HoneysWorld() {
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                <p className="font-sans text-gold/80 text-xs uppercase tracking-[0.18em] mb-2">Creative</p>
+                <p className="font-sans text-brand/80 text-xs uppercase tracking-[0.18em] mb-2">Creative</p>
                 <h3 className="font-serif text-white text-2xl md:text-3xl">Editorial & Events</h3>
               </div>
             </div>
@@ -180,12 +180,12 @@ export function HoneysWorld() {
               href={SITE_CONFIG.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-sans font-medium text-dark text-xs uppercase tracking-[0.15em] group-hover:text-gold transition-colors"
+              className="inline-flex items-center gap-2 font-sans font-medium text-dark text-xs uppercase tracking-[0.15em] group-hover:text-brand transition-colors"
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
             >
               Follow {SITE_CONFIG.instagramHandle}
-              <span className="text-gold">→</span>
+              <span className="text-brand">→</span>
             </motion.a>
           </motion.div>
         </div>

@@ -99,7 +99,7 @@ export function PremiumBox({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.6, delay, ease: easing }}
-      whileHover={{ y: -8, boxShadow: '0 20px 60px rgba(202,138,4,0.15)' }}
+      whileHover={{ y: -8, boxShadow: '0 20px 60px rgba(94,159,152,0.12)' }}
     >
       {children}
     </motion.div>

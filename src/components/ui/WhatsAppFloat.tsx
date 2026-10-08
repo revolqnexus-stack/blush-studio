@@ -9,8 +9,8 @@ export function WhatsAppFloat() {
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-[500] w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-xl"
       style={{
-        border: '2px solid rgba(199,154,74,0.4)',
-        boxShadow: '0 4px 20px rgba(37,211,102,0.3), 0 0 0 1px rgba(199,154,74,0.2)',
+        border: '2px solid rgba(94,159,152,0.45)',
+        boxShadow: '0 4px 20px rgba(37,211,102,0.3), 0 0 0 1px rgba(49,95,90,0.25)',
       }}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}

@@ -39,8 +39,8 @@ export function SectionOrnament({ label, variant = 'light' }: SectionOrnamentPro
     variant === 'dark'
       ? 'rgba(255,255,255,0.12)'
       : variant === 'champagne'
-        ? 'rgba(202,138,4,0.22)'
-        : 'rgba(26,20,16,0.1)'
+        ? 'rgba(94,159,152,0.28)'
+        : 'rgba(32,35,33,0.12)'
 
   return (
     <motion.div
@@ -55,7 +55,7 @@ export function SectionOrnament({ label, variant = 'light' }: SectionOrnamentPro
         {label && (
           <motion.p
             className={`font-sans text-[0.625rem] font-medium uppercase tracking-[0.28em] ${
-              variant === 'dark' ? 'text-gold/70' : 'text-gold'
+              variant === 'dark' ? 'text-brand/70' : 'text-brand'
             }`}
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ export function SectionOrnament({ label, variant = 'light' }: SectionOrnamentPro
             transition={{ duration: 1, ease }}
           />
           <motion.span
-            className="text-gold text-xs select-none"
+            className="text-brand text-xs select-none"
             initial={{ opacity: 0, scale: 0.5, rotate: -45 }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true }}
@@ -117,7 +117,7 @@ function InterludeCopy({ eyebrow, title, subtitle, align }: InterludeCopyProps) 
       }`}
     >
       <motion.p
-        className="mb-2 font-sans text-[0.625rem] font-medium uppercase tracking-[0.24em] text-gold md:mb-3 md:text-[0.6875rem] md:tracking-[0.28em]"
+        className="mb-2 font-sans text-[0.625rem] font-medium uppercase tracking-[0.24em] text-brand md:mb-3 md:text-[0.6875rem] md:tracking-[0.28em]"
         style={{ textShadow }}
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -154,7 +154,7 @@ function InterludeCopy({ eyebrow, title, subtitle, align }: InterludeCopyProps) 
       )}
 
       <motion.div
-        className={`mt-5 h-px max-w-[72px] bg-gold/60 md:mt-6 md:max-w-[100px] ${align === 'center' ? 'mx-auto' : ''}`}
+        className={`mt-5 h-px max-w-[72px] bg-brand/60 md:mt-6 md:max-w-[100px] ${align === 'center' ? 'mx-auto' : ''}`}
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true, margin: '-40px' }}
@@ -304,13 +304,13 @@ export function StudioGalleryStrip({ images, className = '' }: StudioGalleryStri
             }}
           />
           <figcaption className="absolute bottom-0 left-0 right-0 p-3 opacity-100 sm:opacity-0 sm:transition-opacity sm:duration-500 sm:group-hover:opacity-100 md:p-4">
-            <span className="font-sans text-[0.5625rem] uppercase tracking-[0.18em] text-gold/90">
+            <span className="font-sans text-[0.5625rem] uppercase tracking-[0.18em] text-brand/90">
               {String(index + 1).padStart(2, '0')}
             </span>
             <p className="font-serif text-sm text-white/90">{image.caption}</p>
           </figcaption>
           <div
-            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gold/30"
+            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-brand/30"
             aria-hidden="true"
           />
         </motion.figure>
@@ -322,7 +322,7 @@ export function StudioGalleryStrip({ images, className = '' }: StudioGalleryStri
 export function RevealLine({ className = '' }: { className?: string }) {
   return (
     <motion.div
-      className={`h-px bg-gradient-to-r from-gold/60 via-gold/20 to-transparent ${className}`}
+      className={`h-px bg-gradient-to-r from-brand/60 via-brand/20 to-transparent ${className}`}
       initial={{ scaleX: 0, originX: 0 }}
       whileInView={{ scaleX: 1 }}
       viewport={{ once: true, margin: '-40px' }}

@@ -26,7 +26,7 @@ export function Button({
   const baseStyles = 'inline-flex items-center justify-center gap-2.5 px-8 py-3.5 font-sans text-xs font-medium uppercase tracking-[0.1em] rounded-xl transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] whitespace-nowrap'
   
   const variants = {
-    primary: 'bg-dark text-white border border-dark hover:bg-gold hover:border-gold hover:-translate-y-0.5 hover:shadow-gold',
+    primary: 'bg-brand-deep text-white border border-brand-deep hover:bg-brand hover:border-brand hover:-translate-y-0.5 hover:shadow-brand',
     ghost: 'bg-white/15 text-white border border-white/40 backdrop-blur-[10px] hover:bg-white hover:text-dark hover:-translate-y-0.5',
     outline: 'bg-transparent text-dark border border-dark hover:bg-dark hover:text-white hover:-translate-y-0.5 hover:shadow-md',
   }

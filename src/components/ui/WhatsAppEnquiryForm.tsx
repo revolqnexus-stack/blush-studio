@@ -124,8 +124,8 @@ export function WhatsAppEnquiryForm({
   const inputClass = cn(
     'w-full rounded-xl border px-4 py-3 font-sans text-sm outline-none transition',
     isInline
-      ? 'border-dark/10 bg-bg text-dark placeholder:text-text-muted/60 focus:border-gold/50'
-      : 'border-white/12 bg-white/6 text-white placeholder:text-white/35 focus:border-gold/45',
+      ? 'border-dark/10 bg-bg text-dark placeholder:text-text-muted/60 focus:border-brand/50'
+      : 'border-white/12 bg-white/6 text-white placeholder:text-white/35 focus:border-brand/45',
   )
 
   const selectClass = cn(
@@ -147,7 +147,7 @@ export function WhatsAppEnquiryForm({
     >
       {isInline && (
         <div className="mb-5">
-          <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-gold">
+          <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-brand">
             Get in touch
           </p>
           <h3 className="mt-1 font-serif text-2xl leading-tight text-dark">Send an enquiry</h3>
@@ -166,7 +166,7 @@ export function WhatsAppEnquiryForm({
           <span
             className={cn(
               'rounded-full px-2.5 py-1 font-sans text-[0.55rem] font-medium uppercase tracking-[0.14em]',
-              isInline ? 'bg-gold/10 text-gold' : 'bg-gold/15 text-gold',
+              isInline ? 'bg-brand/10 text-brand' : 'bg-brand/15 text-brand',
             )}
           >
             {ENQUIRY_TYPES.find((t) => t.id === data.type)?.label ?? ''}
@@ -174,12 +174,12 @@ export function WhatsAppEnquiryForm({
         )}
       </div>
 
-      <div className="mb-5 h-px bg-gradient-to-r from-gold/50 via-gold/15 to-transparent" />
+      <div className="mb-5 h-px bg-gradient-to-r from-brand/50 via-brand/15 to-transparent" />
 
       {/* Progress bar */}
       <div className={cn('mb-5 h-0.5 w-full rounded-full', isInline ? 'bg-dark/8' : 'bg-white/10')}>
         <motion.div
-          className="h-full rounded-full bg-gold"
+          className="h-full rounded-full bg-brand-deep"
           animate={{ width: `${(currentVisibleStep / totalVisibleSteps) * 100}%` }}
           transition={{ duration: 0.4, ease }}
         />
@@ -207,10 +207,10 @@ export function WhatsAppEnquiryForm({
                       'w-full rounded-xl border px-4 py-3.5 text-left transition',
                       selected
                         ? isInline
-                          ? 'border-gold/50 bg-gold/8'
-                          : 'border-gold/45 bg-gold/12'
+                          ? 'border-brand/50 bg-brand/8'
+                          : 'border-brand/45 bg-brand/12'
                         : isInline
-                          ? 'border-dark/8 bg-bg-alt hover:border-gold/25'
+                          ? 'border-dark/8 bg-bg-alt hover:border-brand/25'
                           : 'border-white/10 bg-white/5 hover:border-white/20',
                     )}
                   >
@@ -281,10 +281,10 @@ export function WhatsAppEnquiryForm({
                         'w-full rounded-xl border px-4 py-3 text-left font-sans text-sm transition',
                         data.courseInterest === course
                           ? isInline
-                            ? 'border-gold/50 bg-gold/8 font-medium text-dark'
-                            : 'border-gold/45 bg-gold/12 font-medium text-white'
+                            ? 'border-brand/50 bg-brand/8 font-medium text-dark'
+                            : 'border-brand/45 bg-brand/12 font-medium text-white'
                           : isInline
-                            ? 'border-dark/8 bg-bg-alt text-text-muted hover:border-gold/25'
+                            ? 'border-dark/8 bg-bg-alt text-text-muted hover:border-brand/25'
                             : 'border-white/10 bg-white/5 text-white/60 hover:border-white/20',
                       )}
                     >
@@ -424,7 +424,7 @@ export function WhatsAppEnquiryForm({
             className={cn(
               'inline-flex h-11 items-center justify-center rounded-full border px-5 font-sans text-[0.65rem] font-medium uppercase tracking-[0.13em] transition',
               isInline
-                ? 'border-dark/12 text-dark/70 hover:border-gold/30 hover:text-dark'
+                ? 'border-dark/12 text-dark/70 hover:border-brand/30 hover:text-dark'
                 : 'border-white/15 text-white/70 hover:border-white/30 hover:text-white',
             )}
           >
@@ -436,7 +436,7 @@ export function WhatsAppEnquiryForm({
           type="button"
           onClick={handleContinue}
           disabled={!canContinue()}
-          className="inline-flex h-11 flex-1 items-center justify-center gap-2 rounded-full border border-gold bg-gold font-sans text-[0.65rem] font-semibold uppercase tracking-[0.13em] text-white transition hover:border-[#D5A85A] hover:bg-[#D5A85A] disabled:cursor-not-allowed disabled:opacity-40"
+          className="inline-flex h-11 flex-1 items-center justify-center gap-2 rounded-full border border-brand-deep bg-brand-deep font-sans text-[0.65rem] font-semibold uppercase tracking-[0.13em] text-white transition hover:border-brand hover:bg-brand disabled:cursor-not-allowed disabled:opacity-40"
         >
           {step === steps.length - 1 ? (
             <>

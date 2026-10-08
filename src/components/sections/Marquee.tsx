@@ -20,7 +20,7 @@ export function Marquee() {
             <span className="text-xs tracking-[0.15em] uppercase text-white/50">
               {item}
             </span>
-            <span className="text-gold">✦</span>
+            <span className="text-champagne">✦</span>
           </div>
         ))}
       </motion.div>

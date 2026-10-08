@@ -17,7 +17,7 @@ export function Portfolio() {
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <motion.p
-            className="text-xs font-medium tracking-[0.25em] uppercase text-gold mb-4"
+            className="text-xs font-medium tracking-[0.25em] uppercase text-brand mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}

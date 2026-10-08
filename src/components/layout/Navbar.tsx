@@ -127,7 +127,7 @@ export function Navbar() {
                         WebkitBackdropFilter: 'blur(32px) saturate(200%)',
                         borderBottom: '1px solid rgba(255,255,255,0.4)',
                         boxShadow:
-                          '0 8px 48px rgba(12,10,9,0.08), 0 2px 12px rgba(202,138,4,0.05), inset 0 1px 0 rgba(255,255,255,0.9), inset 0 -1px 0 rgba(202,138,4,0.08)',
+                          '0 8px 48px rgba(12,10,9,0.08), 0 2px 12px rgba(94,159,152,0.05), inset 0 1px 0 rgba(255,255,255,0.9), inset 0 -1px 0 rgba(94,159,152,0.08)',
                       }
                 }
               />
@@ -143,7 +143,7 @@ export function Navbar() {
                 <motion.div
                   className="absolute inset-0"
                   style={{
-                    background: 'linear-gradient(90deg, transparent 0%, rgba(202,138,4,0.12) 50%, transparent 100%)',
+                    background: 'linear-gradient(90deg, transparent 0%, rgba(94,159,152,0.12) 50%, transparent 100%)',
                     transform: 'translateX(-100%)',
                   }}
                   animate={{
@@ -175,7 +175,7 @@ export function Navbar() {
           <motion.div
             className="absolute -inset-3 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100"
             style={{
-              background: 'radial-gradient(circle at center, rgba(202,138,4,0.08) 0%, transparent 70%)',
+              background: 'radial-gradient(circle at center, rgba(94,159,152,0.08) 0%, transparent 70%)',
               filter: 'blur(12px)',
             }}
             transition={{ duration: 0.3 }}
@@ -187,14 +187,14 @@ export function Navbar() {
           >
             {SITE_CONFIG.name}
             <motion.span
-              className="absolute -bottom-0.5 left-0 h-[1px] bg-gold opacity-0 group-hover:opacity-100"
+              className="absolute -bottom-0.5 left-0 h-[1px] bg-brand-deep opacity-0 group-hover:opacity-100"
               initial={{ width: 0 }}
               whileHover={{ width: '100%' }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             />
           </span>
           <span
-            className={cn('relative font-sans font-light uppercase transition-all duration-500 group-hover:text-gold/70', headerLight ? 'text-white/50' : 'text-dark/55')}
+            className={cn('relative font-sans font-light uppercase transition-all duration-500 group-hover:text-brand/70', headerLight ? 'text-white/50' : 'text-dark/55')}
             style={{ fontSize: '0.46rem', letterSpacing: '0.38em' }}
           >
             {SITE_CONFIG.shortDescriptor}
@@ -224,7 +224,7 @@ export function Navbar() {
               whileHover={{
                 background: lightText
                   ? 'rgba(255,255,255,0.12)'
-                  : 'rgba(202,138,4,0.08)',
+                  : 'rgba(94,159,152,0.08)',
                 color: lightText ? '#FFFDF8' : '#1c1917',
               }}
             >
@@ -234,7 +234,7 @@ export function Navbar() {
               <motion.span
                 className="absolute -bottom-0 left-4 right-4 h-[2px] rounded-full"
                 style={{
-                  background: 'linear-gradient(90deg, transparent 0%, #CA8A04 50%, transparent 100%)',
+                  background: 'linear-gradient(90deg, transparent 0%, #315F5A 50%, transparent 100%)',
                 }}
                 animate={{ 
                   scaleX: activeLink === link.href ? 1 : 0,
@@ -247,7 +247,7 @@ export function Navbar() {
               <motion.span
                 className="absolute inset-0 rounded-full pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle at center, rgba(202,138,4,0.15) 0%, transparent 70%)',
+                  background: 'radial-gradient(circle at center, rgba(94,159,152,0.15) 0%, transparent 70%)',
                   filter: 'blur(8px)',
                 }}
                 animate={{
@@ -279,11 +279,11 @@ export function Navbar() {
               boxShadow: '0 2px 12px rgba(12,10,9,0.08), inset 0 1px 0 rgba(255,255,255,0.3)',
             }}
             whileHover={{
-              background: 'linear-gradient(135deg, #CA8A04 0%, #B87A03 100%)',
-              borderColor: '#CA8A04',
+              background: 'linear-gradient(135deg, #315F5A 0%, #5E9F98 100%)',
+              borderColor: '#315F5A',
               color: '#ffffff',
               y: -2,
-              boxShadow: '0 12px 32px rgba(202,138,4,0.35), 0 4px 12px rgba(202,138,4,0.2)',
+              boxShadow: '0 12px 32px rgba(94,159,152,0.35), 0 4px 12px rgba(94,159,152,0.2)',
               scale: 1.02,
             }}
             whileTap={{ scale: 0.97 }}
@@ -380,7 +380,7 @@ export function Navbar() {
             transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
           >
             <nav className="flex-1 overflow-y-auto overscroll-contain px-6 pb-4 pt-2">
-              <p className="mb-4 font-sans text-[0.625rem] font-medium uppercase tracking-[0.24em] text-gold/70">
+              <p className="mb-4 font-sans text-[0.625rem] font-medium uppercase tracking-[0.24em] text-brand/70">
                 Menu
               </p>
 
@@ -405,10 +405,10 @@ export function Navbar() {
                       }}
                       className="group flex items-center justify-between py-4 active:opacity-80"
                     >
-                      <span className="font-serif text-[1.625rem] leading-none text-white transition-colors group-active:text-gold">
+                      <span className="font-serif text-[1.625rem] leading-none text-white transition-colors group-active:text-brand">
                         {link.label}
                       </span>
-                      <span className="font-sans text-sm text-gold/45 transition-transform group-active:translate-x-0.5">
+                      <span className="font-sans text-sm text-brand/45 transition-transform group-active:translate-x-0.5">
                         →
                       </span>
                     </a>
@@ -428,7 +428,7 @@ export function Navbar() {
                   setOpen(false)
                   openEnquiry()
                 }}
-                className="inline-flex h-12 w-full items-center justify-center gap-2.5 rounded-full border border-gold/40 bg-gold/15 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-white transition-colors active:bg-gold active:border-gold"
+                className="inline-flex h-12 w-full items-center justify-center gap-2.5 rounded-full border border-brand/40 bg-brand/15 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-white transition-colors active:bg-brand-deep active:border-brand-deep"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />

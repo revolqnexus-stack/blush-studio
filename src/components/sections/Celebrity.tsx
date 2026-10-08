@@ -41,7 +41,7 @@ export function Celebrity() {
           {/* Text */}
           <div>
             <motion.p
-              className="text-xs font-medium tracking-[0.25em] uppercase text-gold mb-4"
+              className="text-xs font-medium tracking-[0.25em] uppercase text-brand mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -51,7 +51,7 @@ export function Celebrity() {
             </motion.p>
 
             <motion.div
-              className="flex gap-1 text-gold text-xl mb-4"
+              className="flex gap-1 text-brand text-xl mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -73,7 +73,7 @@ export function Celebrity() {
             </motion.h2>
 
             <motion.blockquote
-              className="font-serif text-lg md:text-xl italic text-white/75 leading-relaxed mb-6 border-l-2 border-gold pl-6"
+              className="font-serif text-lg md:text-xl italic text-white/75 leading-relaxed mb-6 border-l-2 border-brand-deep pl-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}

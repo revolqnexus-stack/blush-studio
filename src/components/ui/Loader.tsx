@@ -130,7 +130,7 @@ export function Loader() {
         >
           <motion.div
             className="h-full"
-            style={{ background: 'linear-gradient(to right, #CA8A04, #D97706)' }}
+            style={{ background: 'linear-gradient(to right, #315F5A, #5E9F98)' }}
             initial={{ width: '0%' }}
             animate={{ width: '100%' }}
             transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}

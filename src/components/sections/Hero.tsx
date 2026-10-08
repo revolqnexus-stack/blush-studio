@@ -170,7 +170,7 @@ export function Hero() {
             <div className="relative max-w-xl lg:max-w-[540px]">
               <motion.p
                 className="font-sans uppercase"
-                style={{ fontWeight: 500, fontSize: '0.6875rem', letterSpacing: '0.22em', color: '#C79A4A', marginBottom: '1rem' }}
+                style={{ fontWeight: 500, fontSize: '0.6875rem', letterSpacing: '0.22em', color: '#5E9F98', marginBottom: '1rem' }}
                 initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={s(1)}
               >
                 {SITE_CONFIG.tagline}
@@ -185,7 +185,7 @@ export function Hero() {
                 }}
                 initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={s(2)}
               >
-                <span style={{ display: 'block', fontWeight: 400, color: 'rgba(199,154,74,0.82)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', letterSpacing: '-0.02em' }}>
+                <span style={{ display: 'block', fontWeight: 400, color: 'rgba(200,169,120,0.95)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', letterSpacing: '-0.02em' }}>
                   {SITE_CONFIG.name}
                 </span>
                 <span style={{ display: 'block', fontWeight: 400, color: 'rgba(245,240,232,0.88)', fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', letterSpacing: '0.12em', marginTop: '0.35rem', textTransform: 'uppercase' }}>
@@ -213,9 +213,9 @@ export function Hero() {
                 style={{ marginTop: '1.375rem', marginBottom: '1.375rem', maxWidth: '280px' }}
                 initial={{ opacity: 0, scaleX: 0 }} animate={{ opacity: 1, scaleX: 1 }} transition={s(2)}
               >
-                <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, #C79A4A, rgba(199,154,74,0.2))' }} />
-                <span style={{ fontSize: '0.625rem', color: '#C79A4A' }}>✦</span>
-                <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to left, #C79A4A, rgba(199,154,74,0.2))' }} />
+                <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, #5E9F98, rgba(94,159,152,0.25))' }} />
+                <span style={{ fontSize: '0.625rem', color: '#5E9F98' }}>✦</span>
+                <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to left, #5E9F98, rgba(94,159,152,0.25))' }} />
               </motion.div>
 
               <motion.p
@@ -233,9 +233,9 @@ export function Hero() {
                 <motion.button
                   type="button"
                   onClick={() => openEnquiry('bridal')}
-                  className="inline-flex items-center justify-center rounded-full border border-[#C79A4A] bg-[#C79A4A] px-7 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.13em] text-white"
-                  style={{ height: '2.75rem', boxShadow: '0 4px 24px rgba(199,154,74,0.28)' }}
-                  whileHover={{ y: -2, background: '#D5A85A', borderColor: '#D5A85A', boxShadow: '0 10px 36px rgba(199,154,74,0.4)' }}
+                  className="inline-flex items-center justify-center rounded-full border border-[#315F5A] bg-[#315F5A] px-7 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.13em] text-white"
+                  style={{ height: '2.75rem', boxShadow: '0 4px 24px rgba(49,95,90,0.28)' }}
+                  whileHover={{ y: -2, background: '#5E9F98', borderColor: '#5E9F98', boxShadow: '0 10px 36px rgba(94,159,152,0.35)' }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ duration: 0.22 }}
                 >
@@ -251,7 +251,7 @@ export function Hero() {
                     background: 'rgba(255,255,255,0.07)', borderColor: 'rgba(255,255,255,0.28)',
                     backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
                   }}
-                  whileHover={{ color: '#FFFDF8', background: 'rgba(255,255,255,0.14)', borderColor: 'rgba(199,154,74,0.55)' }}
+                  whileHover={{ color: '#FFFDF8', background: 'rgba(255,255,255,0.14)', borderColor: 'rgba(94,159,152,0.55)' }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ duration: 0.22 }}
                 >
@@ -268,7 +268,7 @@ export function Hero() {
           {/* Eyebrow */}
           <motion.p
             className="font-sans uppercase"
-            style={{ fontWeight: 500, fontSize: '0.6rem', letterSpacing: '0.2em', color: '#C79A4A', marginBottom: '0.625rem' }}
+            style={{ fontWeight: 500, fontSize: '0.6rem', letterSpacing: '0.2em', color: '#5E9F98', marginBottom: '0.625rem' }}
             initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={s(1)}
           >
             {SITE_CONFIG.tagline}
@@ -283,7 +283,7 @@ export function Hero() {
             }}
             initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={s(2)}
           >
-            <span style={{ display: 'block', fontWeight: 400, color: 'rgba(199,154,74,0.88)', fontSize: 'clamp(1.6rem, 8vw, 2.2rem)' }}>
+            <span style={{ display: 'block', fontWeight: 400, color: 'rgba(200,169,120,0.95)', fontSize: 'clamp(1.6rem, 8vw, 2.2rem)' }}>
               {SITE_CONFIG.name}
             </span>
             <span style={{ display: 'block', fontWeight: 400, color: '#f5f0e8', fontSize: 'clamp(1.35rem, 6vw, 1.75rem)', marginTop: '0.25rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
@@ -314,9 +314,9 @@ export function Hero() {
             style={{ marginTop: '1rem', marginBottom: '1rem', maxWidth: '180px' }}
             initial={{ opacity: 0, scaleX: 0 }} animate={{ opacity: 1, scaleX: 1 }} transition={s(2)}
           >
-            <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, #C79A4A, rgba(199,154,74,0.2))' }} />
-            <span style={{ fontSize: '0.5rem', color: '#C79A4A' }}>✦</span>
-            <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to left, #C79A4A, rgba(199,154,74,0.2))' }} />
+            <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, #5E9F98, rgba(94,159,152,0.25))' }} />
+            <span style={{ fontSize: '0.5rem', color: '#5E9F98' }}>✦</span>
+            <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to left, #5E9F98, rgba(94,159,152,0.25))' }} />
           </motion.div>
 
           {/* Description */}
@@ -340,8 +340,8 @@ export function Hero() {
             <motion.button
               type="button"
               onClick={() => openEnquiry('bridal')}
-              className="inline-flex h-12 w-full items-center justify-center rounded-full border border-[#C79A4A] bg-[#C79A4A] font-sans text-[0.62rem] font-semibold uppercase tracking-[0.13em] text-white"
-              style={{ boxShadow: '0 4px 20px rgba(199,154,74,0.3)' }}
+              className="inline-flex h-12 w-full items-center justify-center rounded-full border border-[#315F5A] bg-[#315F5A] font-sans text-[0.62rem] font-semibold uppercase tracking-[0.13em] text-white"
+              style={{ boxShadow: '0 4px 20px rgba(49,95,90,0.3)' }}
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.22 }}
             >
@@ -382,7 +382,7 @@ export function Hero() {
         <div className="relative overflow-hidden" style={{ width: '1px', height: '44px', background: 'rgba(255,255,255,0.12)' }}>
           <motion.div
             className="absolute left-0 right-0 top-0"
-            style={{ height: '40%', background: '#C79A4A' }}
+            style={{ height: '40%', background: '#5E9F98' }}
             animate={{ y: ['0%', '250%'] }}
             transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
           />

@@ -85,7 +85,7 @@ function ModalChrome({ onClose, initialType }: { onClose: () => void; initialTyp
   return (
     <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-5 py-4 md:px-6">
       <div>
-        <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-gold">
+        <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-brand">
           {SITE_CONFIG.legalName}
         </p>
         <p className="font-serif text-xl text-white">{title}</p>

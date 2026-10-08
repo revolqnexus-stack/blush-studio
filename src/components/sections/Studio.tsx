@@ -5,7 +5,7 @@ import { EditorialMasthead } from '@/components/ui/EditorialCatalogue'
 
 export function Studio() {
   return (
-    <section id="studio" data-nav-surface="light" className="section-gap bg-champagne/40">
+    <section id="studio" data-nav-surface="light" className="section-gap bg-bg">
       <div className="container-custom">
         <EditorialMasthead
           eyebrow="Jubilee Hills · Hyderabad"

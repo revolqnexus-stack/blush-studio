@@ -3,6 +3,18 @@ export const LAYOUT = {
   headerHeightPx: 92,
 } as const
 
+/** Brand palette — synced with tailwind.config.js and index.css :root */
+export const BRAND_COLORS = {
+  ivory: '#F8F5EF',
+  beige: '#EFE5E0',
+  brand: '#5E9F98',
+  brandDeep: '#315F5A',
+  charcoal: '#202321',
+  gray: '#6E706B',
+  champagne: '#C8A978',
+  white: '#FFFFFF',
+} as const
+
 export const SITE_CONFIG = {
   name: 'BLUSH',
   legalName: 'Blush Fine Makeup Art',

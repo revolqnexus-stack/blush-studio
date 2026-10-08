@@ -34,7 +34,7 @@ export function FloatingAmbience() {
       {sparkles.map((s) => (
         <span
           key={s.id}
-          className="absolute text-gold animate-float-up"
+          className="absolute text-brand animate-float-up"
           style={{
             left: s.left,
             fontSize: s.size,

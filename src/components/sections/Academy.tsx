@@ -27,7 +27,7 @@ export function Academy() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.p
-            className="mb-3 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-gold"
+            className="mb-3 font-sans text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-brand"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -42,7 +42,7 @@ export function Academy() {
 
           <div
             className="mx-auto my-5 h-px max-w-[120px]"
-            style={{ background: 'linear-gradient(to right, transparent, #CA8A04, transparent)' }}
+            style={{ background: 'linear-gradient(to right, transparent, #C8A978, transparent)' }}
           />
 
           <motion.p
@@ -68,7 +68,7 @@ export function Academy() {
                   transition={{ duration: 0.4, delay: index * 0.05, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <div className="flex w-full items-start gap-4 py-6 md:gap-5 md:py-7">
-                    <span className="shrink-0 pt-1 font-sans text-[0.6875rem] font-medium tabular-nums tracking-[0.08em] text-gold/70">
+                    <span className="shrink-0 pt-1 font-sans text-[0.6875rem] font-medium tabular-nums tracking-[0.08em] text-brand/70">
                       {String(index + 1).padStart(2, '0')}
                     </span>
 
@@ -95,7 +95,7 @@ export function Academy() {
               <motion.button
                 type="button"
                 onClick={() => openEnquiry('bridal')}
-                className="inline-flex items-center gap-2 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-gold transition-colors hover:text-gold-light"
+                className="inline-flex items-center gap-2 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-brand transition-colors hover:text-brand-light"
               >
                 Start your enquiry
                 <span aria-hidden="true">→</span>

@@ -8,12 +8,12 @@ export function Contact() {
   const sectionRef = useScrollReveal<HTMLElement>()
 
   return (
-    <section ref={sectionRef} id="contact" data-nav-surface="dark" className="section-gap bg-dark">
+    <section ref={sectionRef} id="contact" data-nav-surface="dark" className="section-gap bg-brand-deep">
       <div className="container-custom">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="text-center lg:text-left">
             <motion.p
-              className="text-xs font-medium tracking-[0.25em] uppercase text-gold mb-4"
+              className="text-xs font-medium tracking-[0.25em] uppercase text-brand mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
@@ -52,7 +52,7 @@ export function Contact() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <div className="flex gap-4 items-start md:col-span-2">
-                <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <circle cx="12" cy="11" r="3" />
                 </svg>
@@ -69,7 +69,7 @@ export function Contact() {
                     href={SITE_CONFIG.googleMaps}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-gold/70 hover:text-gold transition-colors"
+                    className="inline-flex items-center gap-1 text-xs text-brand/70 hover:text-brand transition-colors"
                   >
                     Open in Maps
                     <span aria-hidden="true">↗</span>
@@ -78,7 +78,7 @@ export function Contact() {
               </div>
 
               <div className="flex gap-4 items-start">
-                <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                 </svg>
                 <div>
@@ -88,7 +88,7 @@ export function Contact() {
               </div>
 
               <div className="flex gap-4 items-start">
-                <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.81 12.81 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
                 </svg>
                 <div>
@@ -98,7 +98,7 @@ export function Contact() {
                       <a
                         key={display}
                         href={`tel:${SITE_CONFIG.phones[i]}`}
-                        className="text-sm text-white/70 hover:text-gold transition-colors"
+                        className="text-sm text-white/70 hover:text-brand transition-colors"
                       >
                         {display}
                       </a>
@@ -108,12 +108,12 @@ export function Contact() {
               </div>
 
               <div className="flex gap-4 items-start md:col-span-2">
-                <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <div>
                   <strong className="block text-xs tracking-[0.12em] uppercase text-white/40 mb-1">Email</strong>
-                  <a href={`mailto:${SITE_CONFIG.email}`} className="text-sm text-white/70 hover:text-gold transition-colors">
+                  <a href={`mailto:${SITE_CONFIG.email}`} className="text-sm text-white/70 hover:text-brand transition-colors">
                     {SITE_CONFIG.email}
                   </a>
                   <p className="mt-2 text-sm text-white/50">{SITE_CONFIG.instagramHandle}</p>
@@ -131,11 +131,11 @@ export function Contact() {
               <Button
                 variant="primary"
                 href={SITE_CONFIG.whatsapp}
-                className="bg-gold border-gold hover:bg-gold-light hover:border-gold-light"
+                className="bg-brand-deep border-brand-deep hover:bg-brand hover:border-brand"
               >
                 WhatsApp
               </Button>
-              <Button variant="primary" href={`tel:${SITE_CONFIG.phone}`} className="bg-transparent border-gold/50">
+              <Button variant="primary" href={`tel:${SITE_CONFIG.phone}`} className="bg-transparent border-brand/50">
                 Call Now
               </Button>
               <Button

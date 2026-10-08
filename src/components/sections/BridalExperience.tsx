@@ -63,7 +63,7 @@ export function BridalExperience() {
 
         {/* Editorial bridge */}
         <motion.blockquote
-          className="mx-auto mb-12 max-w-2xl border-l-2 border-gold/40 py-1 pl-6 md:mb-14"
+          className="mx-auto mb-12 max-w-2xl border-l-2 border-brand/40 py-1 pl-6 md:mb-14"
           initial={{ opacity: 0, x: -12 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-60px' }}
@@ -145,8 +145,8 @@ export function BridalExperience() {
                       e.preventDefault()
                       scrollTo('#contact')
                     }}
-                    className="inline-flex h-11 items-center justify-center rounded-full border border-gold bg-gold px-7 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-white"
-                    whileHover={{ y: -2, boxShadow: '0 10px 32px rgba(202,138,4,0.28)' }}
+                    className="inline-flex h-11 items-center justify-center rounded-full border border-brand-deep bg-brand-deep px-7 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-white"
+                    whileHover={{ y: -2, boxShadow: '0 10px 32px rgba(49,95,90,0.28)' }}
                     whileTap={{ scale: 0.98 }}
                   >
                     Plan Your Bridal Experience
@@ -157,7 +157,7 @@ export function BridalExperience() {
                       e.preventDefault()
                       scrollTo('#services')
                     }}
-                    className="inline-flex items-center gap-2 font-sans text-[0.65rem] font-medium uppercase tracking-[0.14em] text-dark/60 transition-colors hover:text-gold"
+                    className="inline-flex items-center gap-2 font-sans text-[0.65rem] font-medium uppercase tracking-[0.14em] text-dark/60 transition-colors hover:text-brand"
                   >
                     Explore all services
                     <span aria-hidden="true">→</span>
