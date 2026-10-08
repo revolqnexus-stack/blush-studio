@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEnquiryModal } from '@/context/EnquiryModalContext'
+import { SITE_CONFIG } from '@/constants'
 import { WhatsAppEnquiryForm } from '@/components/ui/WhatsAppEnquiryForm'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -74,9 +75,9 @@ export function EnquiryModal() {
 
 function ModalChrome({ onClose, initialType }: { onClose: () => void; initialType?: string | null }) {
   const title = initialType === 'academy'
-    ? 'Academy enquiry'
+    ? 'Editorial & events enquiry'
     : initialType === 'bridal'
-      ? 'Bridal experience enquiry'
+      ? 'Bridal enquiry'
       : initialType === 'beauty'
         ? 'Beauty services enquiry'
         : 'Plan your enquiry'
@@ -85,7 +86,7 @@ function ModalChrome({ onClose, initialType }: { onClose: () => void; initialTyp
     <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-5 py-4 md:px-6">
       <div>
         <p className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.22em] text-gold">
-          Honey&apos;s Bridal Studio
+          {SITE_CONFIG.legalName}
         </p>
         <p className="font-serif text-xl text-white">{title}</p>
       </div>

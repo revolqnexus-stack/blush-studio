@@ -8,9 +8,9 @@ export function Studio() {
     <section id="studio" data-nav-surface="light" className="section-gap bg-champagne/40">
       <div className="container-custom">
         <EditorialMasthead
-          eyebrow="Rajakumari · Idukki"
-          title="The Studio"
-          subtitle="Step inside Honey's — a warm, intimate space built for bridal preparation, beauty rituals, and the quiet confidence before your day begins."
+          eyebrow="Jubilee Hills · Hyderabad"
+          title="Blush Studio"
+          subtitle="Step inside Blush — a refined space built for bridal preparation, beauty rituals, and the quiet confidence before your day begins."
         />
 
         <StudioGalleryStrip images={STUDIO_GALLERY_STRIP} className="mb-10 md:mb-12" />

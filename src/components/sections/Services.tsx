@@ -136,7 +136,7 @@ export function Services() {
 
         <EditorialMasthead
 
-          eyebrow="Honey's Beauty House"
+          eyebrow="The Blush Experience"
 
           title="Services"
 

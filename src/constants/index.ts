@@ -4,53 +4,97 @@ export const LAYOUT = {
 } as const
 
 export const SITE_CONFIG = {
-  name: "Honey's",
-  tagline: "Bridal Artistry · Kerala",
-  motto: "Gracefully You, Beautifully Bridal.",
-  description: "From signature bridal transformations to professional makeup education, Honey's brings beauty, artistry and technique together under one roof.",
-  phone: "+916282551317",
-  whatsapp: "https://wa.me/916282551317",
-  instagram: "https://www.instagram.com/vineetha_honeys_",
-  location: "Rajakumari, Idukki District, Kerala, India",
-  googleMaps: "https://maps.app.goo.gl/GSVDcUn5dzfFS4mc7",
+  name: 'BLUSH',
+  legalName: 'Blush Fine Makeup Art',
+  shortDescriptor: 'Fine Makeup Art',
+  tagline: 'Hyderabad · Bridal · Beauty · Artistry',
+  motto: 'Your wedding. Your beauty. Elevated.',
+  philosophyLine: "We don't change you. We reveal you.",
+  description:
+    'Bridal makeup designed to enhance what already makes you beautiful — from intimate ceremonies to unforgettable celebrations.',
+  phone: '+917036711119',
+  phones: ['+917036711119', '+919676037755', '+919676061119'] as const,
+  phoneDisplay: ['+91 70367 11119', '+91 96760 37755', '+91 96760 61119'] as const,
+  email: 'blushfinemakeup@gmail.com',
+  whatsapp: 'https://wa.me/917036711119',
+  instagram: 'https://www.instagram.com/blush_finemakeupart',
+  instagramHandle: '@blush_finemakeupart',
+  website: 'https://www.blushstudio.in',
+  location: 'Jubilee Hills, Hyderabad, Telangana, India',
+  locationShort: 'Jubilee Hills, Hyderabad',
+  serviceAreas: 'Hyderabad · Secunderabad · Telangana & destination celebrations',
+  googleMaps:
+    'https://www.google.com/maps/search/?api=1&query=Blush+Fine+Makeup+Art+Jubilee+Hills+Hyderabad',
 } as const
+
+/** Edit these figures when verified with the client */
+export const TRUST_STATS = [
+  { value: '37K+', label: 'Instagram Community' },
+  { value: '10+', label: 'Years of Artistry' },
+  { value: '200+', label: 'Google Reviews' },
+  { value: '4.5★', label: 'Google Rating' },
+] as const
+
+export const BLUSH_PROCESS_STEPS = [
+  {
+    id: 1,
+    title: 'Tell us about your day',
+    description: 'Share your wedding date, event and location.',
+  },
+  {
+    id: 2,
+    title: 'Discover your look',
+    description: 'Discuss your preferred makeup, hair and overall bridal aesthetic.',
+  },
+  {
+    id: 3,
+    title: 'Trial & refine',
+    description: 'Create and refine your bridal look where applicable.',
+  },
+  {
+    id: 4,
+    title: 'Your Blush day',
+    description: 'Relax and enjoy your wedding while the team takes care of the details.',
+  },
+] as const
 
 export const SERVICES = [
   {
     id: 1,
-    title: "Professional Makeup Artist",
-    description: "Flawless, expertly applied makeup looks crafted to enhance your natural beauty for any occasion.",
-    image: "/what we offer pic/professional makeup artist.jpg.jpeg",
+    title: 'Bridal',
+    description:
+      'Wedding-day makeup designed around your features, outfit, ceremony and personal style.',
+    image: '/what we offer pic/bridal makeup,hairstyle and saree drape.jpg.jpeg',
   },
   {
     id: 2,
-    title: "Bridal Makeup, Hairstyle & Saree Drape",
-    description: "Complete bridal transformations including makeup, custom hair styling, and perfect traditional saree draping.",
-    image: "/what we offer pic/bridal makeup,hairstyle and saree drape.jpg.jpeg",
+    title: 'Engagement',
+    description: 'Elegant, camera-ready looks for your engagement celebration.',
+    image: '/what we offer pic/professional makeup artist.jpg.jpeg',
   },
   {
     id: 3,
-    title: "Haircuts & Styling",
-    description: "Trendy and classic hair cuts with professional styling tailored to frame your face perfectly.",
-    image: "/what we offer pic/haircuts and styling.jpg.jpeg",
+    title: 'Reception',
+    description: 'Refined glam designed to transition beautifully from photographs to the celebration.',
+    image: '/photos/2.webp',
   },
   {
     id: 4,
-    title: "Hair Treatments",
-    description: "Nourishing treatments to restore shine, strength, and health to your hair using premium products.",
-    image: "/what we offer pic/hair treatments.jpg.jpeg",
+    title: 'Party & Festive',
+    description: 'Polished makeup for family celebrations, festivities and special occasions.',
+    image: '/photos/5.webp',
   },
   {
     id: 5,
-    title: "Skin Treatments",
-    description: "Rejuvenating skin therapies and facials designed to clear and brighten your complexion.",
-    image: "/what we offer pic/skin treatments.jpg.jpeg",
+    title: 'Hair & Draping',
+    description: 'Complete your look with professional hairstyling and saree/dupatta draping.',
+    image: '/what we offer pic/haircuts and styling.jpg.jpeg',
   },
   {
     id: 6,
-    title: "Mehndi Design",
-    description: "Intricate, beautiful henna and mehndi designs applied by skilled artists for your special moments.",
-    image: "/what we offer pic/mehndi design.jpg.jpeg",
+    title: 'Editorial & Events',
+    description: 'Makeup artistry for models, shoots, productions and creative projects.',
+    image: '/photos/9.webp',
   },
 ] as const
 
@@ -58,37 +102,23 @@ export const TESTIMONIALS = [
   {
     id: 1,
     rating: 5,
-    text: "Thanku so much chechikuttiii. make up super aarunnu. oral polum moshm comment parnjila. ellarum super arnnunn parnju. saree draping paryan ilato — adipoli arnn. hair style um nannayit chythu!",
-    name: "Bridal Client",
-    occasion: "Wedding & Photography Look",
+    text: '[REAL BRIDE REVIEW HERE — replace with verified Google or client feedback]',
+    name: '[Bride Name]',
+    occasion: 'Bridal Makeup',
   },
   {
     id: 2,
     rating: 5,
-    text: "Thank you chechi! Wedding look ethra special aayi — simpleum elegantum aayi oru perfect touch undayirunnu. Hair style um njan aagrahichapole thanne set cheythu thannu. Ellarkkum othiri ishtamaay!",
-    name: "Bridal Client",
-    occasion: "Wedding Vibe",
+    text: 'I felt like the best version of myself on my wedding day.',
+    name: '[Bride Name]',
+    occasion: 'Wedding Day',
   },
   {
     id: 3,
     rating: 5,
-    text: "Thank you so much chechi for making me gorgeous on my big day! The three looks was entirely different and amazing. You made me feel absolutely beautiful and I felt confidence and completely myself.",
-    name: "Bridal Client",
-    occasion: "Three Big Day Looks",
-  },
-  {
-    id: 4,
-    rating: 5,
-    text: "Chechi serikkum work orupaadu ishttappettutto ❤ Make up, hair, photography ellam ishttamaayi. Njan normally makeup use cheyyathathukond nalla tension undairunnu. But vijarichathilum adipoli!",
-    name: "Bridal Client",
-    occasion: "Comfort & Effort",
-  },
-  {
-    id: 5,
-    rating: 5,
-    text: "Chechiii make-up set ayerutooo! Full day makeup oru problem elland ninnu — set ayerunnu. Ellam agrahichapole thanne ellam chechi nallapolee cheyyth thannu!",
-    name: "Bridal Client",
-    occasion: "Makeup Longevity",
+    text: '[REAL BRIDE REVIEW HERE — replace with verified Google or client feedback]',
+    name: '[Bride Name]',
+    occasion: 'South Indian Bridal',
   },
 ] as const
 
@@ -97,25 +127,25 @@ export const STUDIO_INTERIOR_IMAGES = [
   {
     src: '/photos/studio/interior6.png',
     fallback: '/photos/studio/interior.jpeg',
-    alt: "Honey's studio interior — bridal preparation space",
+    alt: 'Blush Studio — bridal preparation space',
     caption: 'Bridal Suite',
-    eyebrow: 'Rajakumari · Idukki',
+    eyebrow: 'Jubilee Hills · Hyderabad',
     title: 'A space designed for transformation',
     subtitle: 'Warm light, considered details, and the calm before your walk down the aisle.',
   },
   {
     src: '/photos/studio/interior7.png',
     fallback: '/photos/studio/interior1.jpeg',
-    alt: "Honey's beauty house interior",
-    caption: 'Beauty House',
-    eyebrow: 'Honey\'s Beauty House',
+    alt: 'Blush Studio interior',
+    caption: 'Blush Studio',
+    eyebrow: 'Blush Fine Makeup Art',
     title: 'Where everyday beauty meets artistry',
     subtitle: 'Hair, skin, and beauty care in an environment as refined as the service.',
   },
   {
     src: '/photos/studio/interior4.jpeg',
     fallback: '/photos/studio/interior5.jpeg',
-    alt: "Honey's studio styling area",
+    alt: 'Blush Studio styling area',
     caption: 'The Atelier',
     eyebrow: 'The Studio',
     title: 'Every detail, intentionally placed',
@@ -184,85 +214,24 @@ export const PORTFOLIO_IMAGES = [
 ] as const
 
 export const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Bridal Studio", href: "#bridal-studio" },
-  { label: "Academy", href: "#academy" },
-  { label: "Services", href: "#services" },
-  { label: "Brides", href: "#portfolio" },
-  { label: "Contact", href: "#contact" },
+  { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
+  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Reviews', href: '#testimonials' },
+  { label: 'Contact', href: '#contact' },
 ] as const
 
 export const MARQUEE_ITEMS = [
-  "Bridal Artistry",
-  "Ladies Only",
-  "Professional Makeup Education",
-  "Bridal Makeup",
-  "Hairstyle & Saree Drape",
-  "Ladies Only Salon",
-  "Haircuts & Styling",
-  "Hair Treatments",
-  "Skin Treatments",
-  "Mehndi Design",
-] as const
-
-export const ACADEMY_PROGRAMS = [
-  {
-    id: 1,
-    title: "Basic Beauty",
-    slug: "basic-beauty",
-    description: "Foundation-level beauty training for beginners.",
-    audience: "Beginners",
-    outcomes: [
-      "Beauty & skincare basics",
-      "Self makeup",
-      "Product knowledge",
-      "Hair basics",
-      "Party makeup"
-    ]
-  },
-  {
-    id: 2,
-    title: "Professional Makeup",
-    slug: "professional-makeup",
-    description: "Professional makeup techniques and working fundamentals.",
-    audience: "Aspiring Makeup Artists",
-    outcomes: [
-      "HD makeup",
-      "Airbrush makeup",
-      "Eye makeup",
-      "Self grooming",
-      "Saree draping",
-      "Client handling"
-    ]
-  },
-  {
-    id: 3,
-    title: "Advanced Bridal",
-    slug: "advanced-bridal",
-    description: "Advanced bridal artistry and specialized bridal techniques.",
-    audience: "Working Makeup Artists",
-    outcomes: [
-      "Bridal makeup",
-      "Advanced hairstyling",
-      "Bridal hair",
-      "Hair extensions basics",
-      "Portfolio development"
-    ]
-  },
-  {
-    id: 4,
-    title: "Master Artist",
-    slug: "master-artist",
-    description: "Advanced professional development and career-focused artistry.",
-    audience: "Professional Artists",
-    outcomes: [
-      "Creative hair styling",
-      "Editorial & creative looks",
-      "Business & marketing",
-      "Career development",
-      "Professional portfolio"
-    ]
-  }
+  'Bridal Makeup',
+  'South Indian Bridal',
+  'Engagement',
+  'Reception',
+  'Party & Festive',
+  'Hair & Draping',
+  'HD Makeup',
+  'Airbrush',
+  'Hyderabad',
+  'Editorial & Events',
 ] as const
 
 export const SERVICE_CATEGORIES = [
@@ -274,7 +243,7 @@ export const SERVICE_CATEGORIES = [
     heading: "Makeup Artistry",
     tagline: "Signature makeup artistry for brides, celebrations and every occasion worth remembering.",
     image: "/what we offer pic/professional makeup artist.jpg.jpeg",
-    imageAlt: "Professional makeup artistry at Honey's Bridal Studio",
+    imageAlt: 'Professional makeup artistry at Blush Fine Makeup Art',
     services: [
       {
         name: "Bridal Makeup",
@@ -302,7 +271,7 @@ export const SERVICE_CATEGORIES = [
       },
       {
         name: "Waterproof Makeup",
-        description: "Long-wear makeup designed for Kerala's climate and demanding occasions.",
+        description: 'Long-wear makeup designed for long celebrations and demanding occasions.',
       },
       {
         name: "Airbrush Makeup",
@@ -322,7 +291,7 @@ export const SERVICE_CATEGORIES = [
     heading: "Bridal Services",
     tagline: "The details that complete the bridal transformation.",
     image: "/what we offer pic/bridal makeup,hairstyle and saree drape.jpg.jpeg",
-    imageAlt: "Bridal styling, saree draping and finishing at Honey's",
+    imageAlt: 'Bridal styling, saree draping and finishing at Blush Studio',
     services: [
       {
         name: "Bridal Hairstyling",
@@ -330,7 +299,7 @@ export const SERVICE_CATEGORIES = [
       },
       {
         name: "Saree Draping",
-        description: "Elegant, secure draping in Kerala and South Indian styles.",
+        description: 'Elegant, secure draping in South Indian and contemporary styles.',
       },
       {
         name: "Jewellery Setting",
@@ -362,7 +331,7 @@ export const SERVICE_CATEGORIES = [
     heading: "Hair Care & Styling",
     tagline: "From everyday refinement to occasion-ready styling and restorative treatments.",
     image: "/what we offer pic/haircuts and styling.jpg.jpeg",
-    imageAlt: "Hair styling and treatments at Honey's",
+    imageAlt: 'Hair styling at Blush Fine Makeup Art',
     services: [
       {
         name: "Hair Cut",
@@ -402,7 +371,7 @@ export const SERVICE_CATEGORIES = [
     heading: "Skin Care",
     tagline: "Restorative facials and treatments to reveal a clear, luminous complexion.",
     image: "/what we offer pic/skin treatments.jpg.jpeg",
-    imageAlt: "Skin care treatments at Honey's",
+    imageAlt: 'Skin care at Blush Studio',
     services: [
       {
         name: "Facial",
@@ -442,7 +411,7 @@ export const SERVICE_CATEGORIES = [
     heading: "Beauty Care",
     tagline: "Essential grooming and body care delivered with precision and hygiene.",
     image: "/what we offer pic/hair treatments.jpg.jpeg",
-    imageAlt: "Beauty and body care at Honey's",
+    imageAlt: 'Beauty care at Blush Studio',
     services: [
       {
         name: "Threading",
@@ -478,7 +447,7 @@ export const SERVICE_CATEGORIES = [
     heading: "Nails & Mehendi",
     tagline: "Artful nail design and intricate mehendi for celebrations and bridal moments.",
     image: "/what we offer pic/mehndi design.jpg.jpeg",
-    imageAlt: "Mehendi and nail art at Honey's",
+    imageAlt: 'Nails and mehendi at Blush Studio',
     priceColumns: [
       { key: "priceBoth", label: "Both / Feet" },
       { key: "priceOne", label: "One Hand" },

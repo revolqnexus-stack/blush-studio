@@ -185,7 +185,7 @@ export function Navbar() {
             className={cn('relative font-serif font-normal transition-all duration-500', headerLight ? 'text-white' : 'text-dark')}
             style={{ fontSize: '1.9rem', letterSpacing: '-0.01em', lineHeight: 1 }}
           >
-            Honey's
+            {SITE_CONFIG.name}
             <motion.span
               className="absolute -bottom-0.5 left-0 h-[1px] bg-gold opacity-0 group-hover:opacity-100"
               initial={{ width: 0 }}
@@ -197,7 +197,7 @@ export function Navbar() {
             className={cn('relative font-sans font-light uppercase transition-all duration-500 group-hover:text-gold/70', headerLight ? 'text-white/50' : 'text-dark/55')}
             style={{ fontSize: '0.46rem', letterSpacing: '0.38em' }}
           >
-            BRIDAL ARTISTRY · LADIES ONLY
+            {SITE_CONFIG.shortDescriptor}
           </span>
         </motion.a>
 
@@ -305,7 +305,7 @@ export function Navbar() {
                 repeatDelay: 3,
               }}
             />
-            <span className="relative z-10">Enquire Now</span>
+            <span className="relative z-10">Book Your Date</span>
           </motion.button>
         </motion.div>
 

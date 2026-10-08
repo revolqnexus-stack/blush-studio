@@ -60,11 +60,11 @@ export function Testimonials() {
       <div className="container-custom mb-12 md:mb-16">
         <div className="text-center">
           <FadeUp>
-            <p className="text-[0.7rem] font-medium tracking-[0.3em] uppercase text-gold mb-4">Bride Diaries</p>
+            <p className="text-[0.7rem] font-medium tracking-[0.3em] uppercase text-gold mb-4">Reviews</p>
           </FadeUp>
           <FadeUp delay={0.1}>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] font-normal text-dark leading-[1.1]">
-              Words From<br /><em className="text-dark-2">Our Brides</em>
+              Loved by<br /><em className="text-dark-2">Brides</em>
             </h2>
           </FadeUp>
         </div>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { PORTFOLIO_IMAGES } from '@/constants'
+import { PORTFOLIO_IMAGES, SITE_CONFIG } from '@/constants'
 import { Button } from '@/components/ui/Button'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 
@@ -23,7 +23,7 @@ export function Portfolio() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            Our Work
+            Portfolio
           </motion.p>
 
           <motion.h2
@@ -33,8 +33,17 @@ export function Portfolio() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Bridal <em className="text-dark-2">Transformations</em>
+            The Blush <em className="text-dark-2">Bride</em>
           </motion.h2>
+          <motion.p
+            className="mt-4 text-text-muted max-w-lg mx-auto"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            A collection of real bridal transformations — replace gallery images with @blush_finemakeupart assets.
+          </motion.p>
         </div>
       </div>
 
@@ -70,9 +79,9 @@ export function Portfolio() {
       >
         <Button
           variant="outline"
-          href="https://www.instagram.com/vineetha_honeys_"
+          href={SITE_CONFIG.instagram}
         >
-          View Full Portfolio on Instagram
+          Follow on Instagram
         </Button>
       </motion.div>
     </section>

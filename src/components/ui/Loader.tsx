@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
-const LETTERS = "Honey's".split('')
+const LETTERS = 'BLUSH'.split('')
 
 // Faster animations on mobile
 const isMobile = typeof window !== 'undefined' ? window.matchMedia('(max-width: 768px)').matches : false
@@ -120,7 +120,7 @@ export function Loader() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          Bridal Studio · Kerala
+          Fine Makeup Art · Hyderabad
         </motion.p>
 
         {/* Progress bar */}

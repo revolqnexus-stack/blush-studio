@@ -31,8 +31,8 @@ export const ENQUIRY_TYPES = [
   },
   {
     id: 'academy' as EnquiryType,
-    label: 'Makeup Academy',
-    description: 'Professional artist training',
+    label: 'Editorial & Events',
+    description: 'Shoots, productions & creative work',
   },
   {
     id: 'general' as EnquiryType,
@@ -42,10 +42,10 @@ export const ENQUIRY_TYPES = [
 ] as const
 
 export const ACADEMY_COURSES = [
-  'Basic Beauty',
-  'Professional Makeup',
-  'Advanced Bridal',
-  'Master Artist',
+  'Editorial shoot',
+  'Commercial / production',
+  'Fashion event',
+  'Creative project',
   'Not sure yet',
 ] as const
 
@@ -58,7 +58,7 @@ export const EXPERIENCE_LEVELS = [
 
 export function buildWhatsAppEnquiryUrl(data: EnquiryFormData): string {
   const lines = [
-    "Hello Honey's Bridal Studio,",
+    `Hello ${SITE_CONFIG.legalName},`,
     '',
     `Enquiry type: ${data.typeLabel}`,
     `Name: ${data.name}`,
@@ -78,7 +78,7 @@ export function buildWhatsAppEnquiryUrl(data: EnquiryFormData): string {
     lines.push('', 'Additional details:', data.message.trim())
   }
 
-  lines.push('', 'Sent via honeysbridalstudio.com')
+  lines.push('', `Sent via ${SITE_CONFIG.website.replace(/^https?:\/\//, '')}`)
 
   const text = encodeURIComponent(lines.join('\n'))
   return `${SITE_CONFIG.whatsapp}?text=${text}`

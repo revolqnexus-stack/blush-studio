@@ -37,7 +37,7 @@ function App() {
         <Marquee />
         <About />
         <Studio />
-        <SectionOrnament label="Three Worlds" variant="champagne" />
+        <SectionOrnament label="The Experience" variant="champagne" />
         <HoneysWorld />
 
         <StudioInterlude
@@ -52,7 +52,7 @@ function App() {
 
         <BridalExperience />
 
-        <SectionOrnament label="For Artists" variant="dark" />
+        <SectionOrnament label="Your Journey" variant="dark" />
 
         <Academy />
 
@@ -79,7 +79,7 @@ function App() {
           height="sm"
         />
 
-        <SectionOrnament label="Our Brides" variant="light" />
+        <SectionOrnament label="The Blush Bride" variant="light" />
         <Portfolio />
         <Testimonials />
         <DualCTA />

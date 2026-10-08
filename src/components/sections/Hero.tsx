@@ -185,11 +185,14 @@ export function Hero() {
                 }}
                 initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={s(2)}
               >
-                <span style={{ display: 'block', fontWeight: 400, color: 'rgba(199,154,74,0.82)', fontSize: 'clamp(2rem, 3.2vw, 2.75rem)', letterSpacing: '-0.02em' }}>
-                  BEAUTY,
+                <span style={{ display: 'block', fontWeight: 400, color: 'rgba(199,154,74,0.82)', fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', letterSpacing: '-0.02em' }}>
+                  {SITE_CONFIG.name}
                 </span>
-                <span style={{ display: 'block', fontWeight: 400, color: 'rgba(245,240,232,0.96)', fontSize: 'clamp(3rem, 5.2vw, 4.75rem)', marginTop: '-0.02em' }}>
-                  MASTERED.
+                <span style={{ display: 'block', fontWeight: 400, color: 'rgba(245,240,232,0.88)', fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', letterSpacing: '0.12em', marginTop: '0.35rem', textTransform: 'uppercase' }}>
+                  {SITE_CONFIG.legalName.replace(/^Blush /i, '')}
+                </span>
+                <span style={{ display: 'block', fontWeight: 400, color: 'rgba(245,240,232,0.96)', fontSize: 'clamp(2rem, 3.8vw, 3.25rem)', marginTop: '0.75rem', lineHeight: 1.05 }}>
+                  YOUR WEDDING.<br />YOUR BEAUTY.<br />ELEVATED.
                 </span>
               </motion.h1>
 
@@ -236,12 +239,12 @@ export function Hero() {
                   whileTap={{ scale: 0.97 }}
                   transition={{ duration: 0.22 }}
                 >
-                  Book Your Bridal Experience
+                  Book Your Date
                 </motion.button>
 
                 <motion.a
-                  href="#academy"
-                  onClick={(e) => { e.preventDefault(); scrollTo('#academy') }}
+                  href="#portfolio"
+                  onClick={(e) => { e.preventDefault(); scrollTo('#portfolio') }}
                   className="inline-flex items-center gap-2 rounded-full border px-5 font-sans text-[0.65rem] font-medium uppercase tracking-[0.13em]"
                   style={{
                     height: '2.75rem', color: 'rgba(255,253,248,0.92)',
@@ -252,7 +255,7 @@ export function Hero() {
                   whileTap={{ scale: 0.97 }}
                   transition={{ duration: 0.22 }}
                 >
-                  Explore the Academy
+                  View Portfolio
                   <span style={{ fontSize: '0.875rem', lineHeight: 1 }}>↗</span>
                 </motion.a>
               </motion.div>
@@ -281,10 +284,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={s(2)}
           >
             <span style={{ display: 'block', fontWeight: 400, color: 'rgba(199,154,74,0.88)', fontSize: 'clamp(1.6rem, 8vw, 2.2rem)' }}>
-              BEAUTY,
+              {SITE_CONFIG.name}
             </span>
-            <span style={{ display: 'block', fontWeight: 400, color: '#f5f0e8', fontSize: 'clamp(2.2rem, 11vw, 3rem)', marginTop: '-0.02em' }}>
-              MASTERED.
+            <span style={{ display: 'block', fontWeight: 400, color: '#f5f0e8', fontSize: 'clamp(1.35rem, 6vw, 1.75rem)', marginTop: '0.25rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              Fine Makeup Art
+            </span>
+            <span style={{ display: 'block', fontWeight: 400, color: '#f5f0e8', fontSize: 'clamp(1.5rem, 7vw, 2rem)', marginTop: '0.5rem', lineHeight: 1.08 }}>
+              YOUR WEDDING. YOUR BEAUTY. ELEVATED.
             </span>
           </motion.h1>
 
@@ -339,12 +345,12 @@ export function Hero() {
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.22 }}
             >
-              Book Your Bridal Experience
+              Book Your Date
             </motion.button>
 
             <motion.a
-              href="#academy"
-              onClick={(e) => { e.preventDefault(); scrollTo('#academy') }}
+              href="#portfolio"
+              onClick={(e) => { e.preventDefault(); scrollTo('#portfolio') }}
               className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full border font-sans text-[0.62rem] font-medium uppercase tracking-[0.13em]"
               style={{
                 color: 'rgba(255,253,248,0.92)',
@@ -356,7 +362,7 @@ export function Hero() {
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.22 }}
             >
-              Explore the Academy
+              View Portfolio
               <span style={{ fontSize: '0.8rem', lineHeight: 1 }}>↗</span>
             </motion.a>
           </motion.div>

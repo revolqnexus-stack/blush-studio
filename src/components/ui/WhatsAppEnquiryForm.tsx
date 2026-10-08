@@ -340,7 +340,7 @@ export function WhatsAppEnquiryForm({
                     type="text"
                     value={data.eventLocation}
                     onChange={(e) => setData((prev) => ({ ...prev, eventLocation: e.target.value }))}
-                    placeholder="e.g. Idukki, Munnar, Ernakulam…"
+                    placeholder="e.g. Jubilee Hills, Hyderabad, destination wedding…"
                     className={inputClass}
                   />
                 </div>

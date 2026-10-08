@@ -70,7 +70,7 @@ export function BridalExperience() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="font-serif text-lg italic leading-relaxed text-dark/85 md:text-xl">
-            &ldquo;Honey&apos;s provides much more than makeup — we craft your complete bridal preparation
+            &ldquo;Blush provides much more than makeup — we craft your complete bridal preparation
             ritual.&rdquo;
           </p>
         </motion.blockquote>
@@ -194,7 +194,7 @@ export function BridalExperience() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
               >
-                On-location across Idukki, Munnar, Ernakulam and surrounding districts.
+                On-location across Hyderabad, Telangana and destination celebrations.
               </motion.p>
             </div>
           </div>
